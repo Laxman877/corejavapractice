@@ -1,0 +1,22 @@
+package com.practice.service.impl;
+
+import java.util.List;
+
+import com.practice.model.Bridges;
+import com.practice.service.BridgesService;
+
+public class BridgesServiceImpl implements BridgesService {
+
+	@Override
+	public Bridges addBridges(Bridges bridges) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Bridges> getAllBridges() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

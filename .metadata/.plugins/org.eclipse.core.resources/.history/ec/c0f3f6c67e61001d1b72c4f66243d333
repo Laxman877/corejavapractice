@@ -1,0 +1,11 @@
+package com.practice;
+
+import java.util.List;
+
+import com.practice.model.Bridges;
+
+interface BridgesService {
+	
+	Bridges addBridges(Bridges bridges);
+	List<Bridges> getAllBridges();
+}

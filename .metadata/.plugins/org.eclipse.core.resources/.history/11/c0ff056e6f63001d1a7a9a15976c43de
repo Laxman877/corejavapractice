@@ -1,0 +1,12 @@
+package com.util;
+
+import java.sql.Connection;
+
+public class MakeConnection {
+
+	Connection cn;
+	
+	public Connection mkConnection() {
+		
+	}
+}

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aop-reference-model>
+<aop-project name="InfrastructureStatistics"/>
+<aop-project name="Profile_application"/>
+<aop-project name="Blog_application_api"/>
+<aop-project name="India_Infrastructure"/>
+</aop-reference-model>

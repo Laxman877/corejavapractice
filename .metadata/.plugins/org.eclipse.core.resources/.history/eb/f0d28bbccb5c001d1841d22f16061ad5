@@ -1,0 +1,15 @@
+package static_concept;
+
+public class StaticConcept {
+	static int i=0;
+	{
+		i=10;
+	}
+	public StaticConcept() {
+		
+	}
+	public static void main(String[] args) {
+		StaticConcept sts = new StaticConcept();
+		System.out.println("value of i "+i);
+	}
+}

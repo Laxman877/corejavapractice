@@ -1,0 +1,7 @@
+package com.practice.service;
+
+public interface BridgesService {
+
+	Bridges addBridges(Bridges bridges);
+	List<Bridges> getAllBridges();
+}

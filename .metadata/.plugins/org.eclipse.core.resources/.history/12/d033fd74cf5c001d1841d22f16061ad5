@@ -1,0 +1,22 @@
+package static_concept;
+
+class SuperClass {
+	final void m1() {
+		System.out.println("superClass");
+	}
+}
+
+class SubClass extends SuperClass {
+	void subClass() {
+		System.out.println("subclass");
+	}
+}
+
+public class StaticConcept {
+
+	public static void main(String[] args) {
+		SubClass sub=new SubClass();
+		sub.m1();
+	}
+
+}

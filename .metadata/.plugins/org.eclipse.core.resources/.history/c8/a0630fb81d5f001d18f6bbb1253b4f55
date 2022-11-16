@@ -1,0 +1,52 @@
+package listinterface;
+
+import java.util.AbstractList;
+
+public class LinkedListConcept extends AbstractList ,implements List{
+	Node head;
+
+	class Node {
+
+		int data;
+		Node next;
+
+		Node(int data) {
+			this.data = data;
+			next = null;
+		}
+	}
+
+	public void printMyLinkedList() {
+		Node n = head;
+		while (n != null) {
+			System.out.println(n.data);
+			n = n.next;
+		}
+	}
+
+	public static void main(String[] args) {
+		LinkedListConcept link = new LinkedListConcept();
+		Node first = link.new Node(10);
+		link.head = first;
+
+		Node second = link.new Node(20);
+		first.next = second;
+
+		Node third = link.new Node(30);
+		second.next = third;
+		
+		link.printMyLinkedList();
+	}
+
+	@Override
+	public Object get(int index) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public int size() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+}

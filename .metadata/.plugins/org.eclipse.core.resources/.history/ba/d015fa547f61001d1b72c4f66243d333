@@ -1,0 +1,10 @@
+package com.practice.Dao;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.practice.model.Bridges;
+
+interface BridgesDao extends JpaRepository<Bridges, Integer>{
+
+	
+}

@@ -1,0 +1,29 @@
+package com.practice.service.impl;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.practice.Dao.BridgesDao;
+import com.practice.model.Bridges;
+import com.practice.service.BridgesService;
+@Service
+public class BridgesServiceImpl implements BridgesService {
+	
+	@Autowired
+	private BridgesDao bridgesDao;
+	
+	@Override
+	public Bridges addBridges(Bridges bridges) {
+		Bridges bridge = this.bridgesDao.save(bridges);
+		return bridge;
+	}
+
+	@Override
+	public List<Bridges> getAllBridges() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

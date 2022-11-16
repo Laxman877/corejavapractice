@@ -1,0 +1,47 @@
+package com.practice.service.impl;
+
+import java.util.List;
+import java.util.Optional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.practice.Dao.BridgesDao;
+import com.practice.model.Bridges;
+import com.practice.service.BridgesService;
+@Service
+public class BridgesServiceImpl implements BridgesService {
+	
+	@Autowired
+	private BridgesDao bridgesDao;
+	
+	@Override
+	public Bridges addBridges(Bridges bridges) {
+		Bridges bridge = this.bridgesDao.save(bridges);
+		return bridge;
+	}
+
+	@Override
+	public List<Bridges> getAllBridges() {
+		List<Bridges> list = this.bridgesDao.findAll();
+		return list;
+	}
+
+	@Override
+	public Bridges updateBridges(Bridges bridges, Integer id) {
+		Bridges bridges2 = this.bridgesDao.save(bridges);
+		return bridges2;
+	}
+
+	@Override
+	public Bridges getBridgeById(Integer id) throws Exception {
+		Bridges bridge = this.bridgesDao.findById(id).orElseThrow(()->new Exception("Bridge"));
+		return bridge;
+	}
+
+	@Override
+	public void deleteBridge(Integer id) {
+		this.bridgesDao.deleteById(id);
+	}
+
+}

@@ -1,0 +1,5 @@
+package com.controller.product;
+
+public class UpdateProductController {
+
+}

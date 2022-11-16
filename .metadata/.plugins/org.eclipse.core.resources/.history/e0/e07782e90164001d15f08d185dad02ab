@@ -1,0 +1,27 @@
+package com.dao;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+
+import com.model.Product;
+import com.util.MakeConnection;
+
+public class ProductDao {
+
+	Connection cn;
+	public ProductDao() {
+		MakeConnection con = new MakeConnection();
+		cn = con.mkConnection();
+	}
+	public int addProduct(Product p) {
+		int i=0;
+		try {
+			PreparedStatement ps =cn.prepareStatement("insert into product values(?,?,?)");
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return i;
+	}
+}

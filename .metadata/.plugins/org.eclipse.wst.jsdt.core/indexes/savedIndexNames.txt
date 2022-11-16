@@ -1,0 +1,8 @@
+INDEX VERSION 1.4+D:\Laxman_DoNot_Delete\CoreJava_Practice\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+76035324.index
+2150056805.index
+3177900517.index
+1957387062.index
+2604753859.index
+2760542578.index
+844078983.index

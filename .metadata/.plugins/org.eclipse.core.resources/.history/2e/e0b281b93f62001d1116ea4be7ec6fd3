@@ -1,0 +1,9 @@
+package oops;
+
+public class StaticCheck {
+	int x;
+	static int y;
+	public static void main(String[] args) {
+		
+	}
+}

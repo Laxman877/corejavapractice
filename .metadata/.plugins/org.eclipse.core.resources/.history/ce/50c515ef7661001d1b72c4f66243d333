@@ -1,0 +1,46 @@
+package com.demo.services.impl;
+
+import java.util.List;
+
+import com.demo.payloads.UserDto;
+import com.demo.services.UserService;
+
+public class UserServiceImpl_2 implements UserService {
+
+	@Override
+	public UserDto registerNewUser(UserDto user) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public UserDto updateUser(UserDto user, Integer userId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public UserDto getUserById(Integer userId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<UserDto> getAllUser() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void deleteUser(Integer userId) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public UserDto createUser(UserDto userdto) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

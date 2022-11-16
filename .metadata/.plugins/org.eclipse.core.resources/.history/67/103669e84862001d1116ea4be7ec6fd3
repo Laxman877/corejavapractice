@@ -1,0 +1,5 @@
+package com.profile.service;
+
+public class UserServiceImpl {
+
+}

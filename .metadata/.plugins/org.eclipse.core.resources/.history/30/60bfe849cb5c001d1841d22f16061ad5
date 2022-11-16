@@ -1,0 +1,9 @@
+package static_concept;
+
+public class StaticConcept {
+	static int i;
+	public static void main(String[] args) {
+		
+		System.out.println("value of i "+i);
+	}
+}
